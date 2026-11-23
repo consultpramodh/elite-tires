@@ -1,0 +1,31 @@
+.request-page { max-width: 48rem; }
+.request-note { padding: 1rem; margin-top: 1rem; border-left: 3px solid var(--accent); background: var(--surface); }
+.request-panel { margin: 2rem 0; padding: clamp(1rem, 4vw, 2rem); border: 1px solid var(--line); border-radius: 1rem; background: var(--card); }
+.request-panel:not(:target) { display: none; }
+.request-panel h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); }
+.request-panel fieldset { min-width: 0; margin: 1.5rem 0; padding: 0; border: 0; }
+.request-panel legend { font-weight: 750; margin-bottom: .65rem; }
+.request-panel label { display: grid; gap: .25rem; margin-bottom: .75rem; }
+.request-panel label[hidden] { display: none; }
+.request-panel input:not([type="checkbox"]), .request-panel select, .request-panel textarea {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: .55rem .65rem;
+  border: 1px solid var(--line);
+  border-radius: .4rem;
+  font: inherit;
+  background: var(--bg);
+  color: var(--ink);
+}
+.request-panel .consent { display: flex; align-items: center; gap: .65rem; min-height: 44px; }
+.request-panel input[type="checkbox"] { accent-color: var(--accent); width: 1.15rem; height: 1.15rem; flex: none; }
+.request-grid { display: grid; gap: .75rem; }
+.request-panel button { font: inherit; font-weight: 750; cursor: pointer; }
+.request-summary { margin-top: 1rem; }
+.request-summary dl { margin: 1rem 0; }
+.request-summary dt { font-weight: 750; }
+.request-summary dd { margin: 0 0 .65rem; overflow-wrap: anywhere; }
+@media (min-width: 42rem) {
+  .request-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}

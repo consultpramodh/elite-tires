@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en-CA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex"><title>Request preview | Elite Tires &amp; Auto Services</title>
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="requests.css"><script defer src="requests.js"></script></head>
+<body><a class="skip button" href="#main">Skip to content</a>
+<header class="top"><div class="wrap header"><a class="brand" href="index.html"><strong>ELITE</strong><span>Tires &amp; Auto Services</span></a><a class="button" href="tel:+19052829869">Call the shop</a></div></header>
+<main id="main" class="wrap section request-page">
+<h1>How can we help?</h1>
+<p class="request-note"><strong>Customer preview.</strong> Use sample details. Your entries stay on this page and are cleared when you leave. For a real quote or visit, call <a href="tel:+19052829869">905-282-9869</a>.</p>
+<noscript><p>JavaScript is needed to review sample details. Call the shop to make a request.</p></noscript>
+<nav class="actions" aria-label="Request type"><a class="button outline" href="#tire-quote">Tire quote</a><a class="button outline" href="#service-visit">Service visit</a></nav>
+<section id="tire-quote" class="request-panel"><h2>Tire quote</h2>
+<form autocomplete="off" hidden>
+<fieldset><legend>Your vehicle</legend><div class="request-grid">
+<label>Year<input name="Year" required inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="2022"></label>
+<label>Make<input name="Make" required maxlength="60"></label>
+<label>Model<input name="Model" required maxlength="60"></label>
+</div></fieldset><fieldset><legend>What are you looking for?</legend>
+<label>Tire type<select name="Tire type" required><option value="">Choose a tire type</option><option>Winter</option><option>All-season</option><option>All-weather</option><option>Unsure</option></select></label>
+<label>Tire size (optional)<input name="Tire size" maxlength="30" placeholder="225/55R18"></label>
+<label>Driving needs or budget (optional)<textarea name="Driving needs or budget" maxlength="500" rows="3"></textarea></label></fieldset><fieldset><legend>How should we reach you?</legend>
+<label>Name<input name="Name" required maxlength="100" autocomplete="name"></label>
+<label>Contact method<select name="Contact method" data-contact><option>Phone</option><option>Email</option></select></label>
+<label data-phone>Phone<input name="Phone" type="tel" required autocomplete="tel" maxlength="30"></label>
+<label data-email hidden>Email<input name="Email" type="email" disabled autocomplete="email" maxlength="254"></label>
+<label class="consent"><input type="checkbox" required> I agree to be contacted about this request.</label>
+</fieldset>
+<button class="button" type="submit">Review tire quote details</button>
+</form>
+<div class="request-summary" hidden tabindex="-1">
+<h3>Request preview</h3><p>These details are shown on this page only. No request was sent or appointment booked.</p>
+<dl></dl><button class="button outline" type="button">Edit details</button>
+</div></section><section id="service-visit" class="request-panel"><h2>Service visit</h2>
+<form autocomplete="off" hidden>
+<fieldset><legend>Your vehicle</legend><div class="request-grid">
+<label>Year<input name="Year" required inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="2022"></label>
+<label>Make<input name="Make" required maxlength="60"></label>
+<label>Model<input name="Model" required maxlength="60"></label>
+</div></fieldset><fieldset><legend>What do you need?</legend>
+<label>Service<select name="Service" required><option value="">Choose a service</option><option>Seasonal changeover</option><option>Flat repair or TPMS</option><option>Wheel balancing</option><option>Brakes</option><option>Oil change or maintenance</option><option>Suspension or steering</option><option>Diagnostics or unsure</option></select></label>
+<label>Symptoms or details (optional)<textarea name="Symptoms or details" maxlength="500" rows="3"></textarea></label>
+<label>Preferred day (optional)<input name="Preferred day" type="date"></label>
+<label>Visit preference<select name="Visit preference"><option>Either works</option><option>Wait at the shop</option><option>Drop off my vehicle</option></select></label>
+<p>A preferred day doesn’t reserve a time. The shop would need to confirm availability.</p></fieldset><fieldset><legend>How should we reach you?</legend>
+<label>Name<input name="Name" required maxlength="100" autocomplete="name"></label>
+<label>Contact method<select name="Contact method" data-contact><option>Phone</option><option>Email</option></select></label>
+<label data-phone>Phone<input name="Phone" type="tel" required autocomplete="tel" maxlength="30"></label>
+<label data-email hidden>Email<input name="Email" type="email" disabled autocomplete="email" maxlength="254"></label>
+<label class="consent"><input type="checkbox" required> I agree to be contacted about this request.</label>
+</fieldset>
+<button class="button" type="submit">Review service visit details</button>
+</form>
+<div class="request-summary" hidden tabindex="-1">
+<h3>Request preview</h3><p>These details are shown on this page only. No request was sent or appointment booked.</p>
+<dl></dl><button class="button outline" type="button">Edit details</button>
+</div></section>
+<p><a href="privacy.html">Privacy</a></p>
+</main></body></html>
